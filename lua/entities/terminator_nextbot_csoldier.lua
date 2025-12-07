@@ -230,6 +230,7 @@ function ENT:GetCoverStatusOfPos( myTbl, coverPos, enemy, enemysShoot )
     if not coverposCache then
         coverposCache = {}
         timer.Simple( 30, function()
+            if not IsValid( self ) then return end
             coverposCache = nil
 
         end )
