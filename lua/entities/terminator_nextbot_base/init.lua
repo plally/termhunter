@@ -147,7 +147,6 @@ function ENT:Initialize()
 	myTbl.m_PitchAim = 0
 	myTbl.m_Conditions = {}
 	myTbl.m_PathUpdatesDemanded = 0
-	myTbl.heardThingCounts = {}
 
 	local loco = myTbl.loco
 	loco:SetGravity( myTbl.DefaultGravity )
