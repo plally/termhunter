@@ -1107,6 +1107,8 @@ function ENT:validSoundHint()
 
         timer.Simple( 120, function()
             if not IsValid( self ) then return end
+            if not self.heardThingCounts then return end
+            if not self.heardThingCounts[ id ] then return end
             self.heardThingCounts[ id ] = self.heardThingCounts[ id ] + -1
 
         end )
